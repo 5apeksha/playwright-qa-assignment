@@ -13,7 +13,7 @@ This repository contains resources related to API testing assignments.
 ### 2. Postman Collection
 - `postman-qa-assignment.postman_collection`
 - This file contains a Postman API collection covering all test cases listed in the Excel file.
-- To view this collection import this file into postman tool.
+- To view this collection import this file into Postman tool.
 
 ### 3. Automation (Playwright - Not Included)
 - The next part of the assignment involved writing Automation API scripts and UI scripts using Playwright with TypeScript.
