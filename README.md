@@ -17,6 +17,4 @@ This repository contains resources related to API testing assignments.
 
 ### 3. Automation (Selenium java)
 - The next part of the assignment involved writing UI scripts using selenium with java.
-- This part has not been completed as it is outside my current work experience.
-- Therefore, no Playwright automation scripts are included in this repository.
 
