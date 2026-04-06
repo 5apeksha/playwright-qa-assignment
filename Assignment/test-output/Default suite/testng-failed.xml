@@ -5,10 +5,9 @@
     <classes>
       <class name="tests.BookingTest">
         <methods>
-          <include name="testElementVisibility"/>
-          <include name="testCheckAvailabilityAndBookRoom"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="testBookingFlow"/>
         </methods>
       </class> <!-- tests.BookingTest -->
     </classes>

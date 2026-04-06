@@ -1,6 +1,7 @@
 package utils;
 
 import org.apache.poi.ss.usermodel.*;
+import java.text.SimpleDateFormat;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
@@ -40,7 +41,12 @@ public class ExcelUtil {
             case STRING:
                 return cell.getStringCellValue();
             case NUMERIC:
-                return String.valueOf(cell.getNumericCellValue());
+                if (DateUtil.isCellDateFormatted(cell)) {
+                	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                	return sdf.format(cell.getDateCellValue());
+                } else {
+                    return String.valueOf(cell.getNumericCellValue());
+                }
             case BOOLEAN:
                 return String.valueOf(cell.getBooleanCellValue());
             default:
